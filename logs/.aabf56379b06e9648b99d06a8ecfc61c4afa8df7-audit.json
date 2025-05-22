@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\muham\\Projects\\muhammad-isa.my.id\\trello-clone\\be-trello-clone\\logs\\.aabf56379b06e9648b99d06a8ecfc61c4afa8df7-audit.json",
+    "files": [
+        {
+            "date": 1747881316257,
+            "name": "C:\\Users\\muham\\Projects\\muhammad-isa.my.id\\trello-clone\\be-trello-clone\\logs\\database-log-2025-05-22.log",
+            "hash": "807fd50fac7cb90b05f96b528ef01e2f949f20fc14638d3e13c6062e07c2b62b"
+        }
+    ],
+    "hashType": "sha256"
+}
