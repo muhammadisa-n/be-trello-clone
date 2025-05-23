@@ -12,3 +12,4 @@ itemRouter.post("/api/items", ItemController.create);
 itemRouter.get("/api/items/:id", ItemController.update);
 itemRouter.get("/api/items/:id", ItemController.delete);
 itemRouter.patch("/api/items/:id/move", ItemController.move);
+itemRouter.delete("/api/items/:id", ItemController.delete);
