@@ -35,7 +35,7 @@ model Todo {
 model Item {
   id         Int       @id @default(autoincrement())
   name       String
-  todo       Todo      @relation(fields: [todoId], references: [id])
+  todo       Todo      @relation(fields: [todoId], references: [id], onDelete: Cascade)
   todoId     Int
   created_at DateTime  @default(now()) @db.Timestamp(0)
   updated_at DateTime  @updatedAt @db.Timestamp(0)
