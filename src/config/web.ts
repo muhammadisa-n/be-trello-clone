@@ -1,8 +1,6 @@
 import express from "express";
 import fileUpload from "express-fileupload";
 import cors from "cors";
-import cookieParser from "cookie-parser";
-import { env } from "./env";
 // import expressLayouts from "express-ejs-layouts";
 // import path from "path";
 
@@ -21,13 +19,7 @@ export const web = express();
 
 // Middleware
 web.use(express.json());
-web.use(cookieParser());
-web.use(
-  cors({
-    origin: env.CLIENT_URLS,
-    credentials: true,
-  })
-);
+web.use(cors());
 web.use(fileUpload({ useTempFiles: true, tempFileDir: "./temp/" }));
 web.use(express.static("public"));
 web.use(httpLogger);
