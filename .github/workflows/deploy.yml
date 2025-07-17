@@ -29,6 +29,5 @@ jobs:
             git config --global --add safe.directory /var/www/${{ secrets.VPS_DOMAIN }}/trello-clone/be-trello-clone
             git pull origin main
             npm install
-            node craft db:migrate
             npm run pm2:restart
           EOF
