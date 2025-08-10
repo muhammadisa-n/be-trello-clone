@@ -1,0 +1,8 @@
+services:
+  be-trello-clone:
+    container_name: be-trello-clone
+    image: be_trello_clone_image
+    build: .
+    ports:
+      - "15000:15000"
+    restart: always
